@@ -114,11 +114,11 @@ of public money was allocated — and whether it reached those who need it most.
     st.markdown("**Data Sources**")
     st.markdown("""
 - 🏦 IDC Dashboard (FY2017–2025)
-- 🏛️ NEF via PQ705, dtic.gov.za
+- 🏛️ NEF via PQ705, https://www.thedtic.gov.za/
 - 📊 Stats SA QLFS Q3 2025
     """)
     st.markdown("---")
-    st.caption("Analysis by Lindiwe Dube · Built with Streamlit")
+    st.caption("Analysis by Lindiwe Songelwa · Built with Streamlit")
 
 # ── Hero ───────────────────────────────────────────────────────────────────────
 st.markdown("""
