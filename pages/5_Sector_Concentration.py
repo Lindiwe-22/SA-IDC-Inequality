@@ -345,7 +345,7 @@ issues = [
     ("IDC: No Job Data", "R65.9B deployed with zero published job creation metrics. This is a public accountability failure, not a data quality issue.", "🔴"),
 ]
 
-for icon, title, desc, severity in issues:
+for title, desc, severity in issues:
     severity_color = {'🔴': '#fef2f2', '🟡': '#fffbeb', '🟢': '#f0fdf4'}[severity]
     border_color   = {'🔴': '#e05c5c', '🟡': '#f0a500', '🟢': '#00c9a7'}[severity]
     st.markdown(f"""
