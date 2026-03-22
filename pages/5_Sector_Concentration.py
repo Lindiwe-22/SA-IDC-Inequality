@@ -359,6 +359,8 @@ for title, desc, severity in issues:
 
 st.markdown("""
 <div style="text-align:center; padding:24px 0 8px; color:#94a3b8; font-size:12px; margin-top:24px;">
-  Source: IDC Funding Dashboard · NEF Parliamentary Question PQ705 (dtic.gov.za)
+  Source: IDC Funding Dashboard · NEF Parliamentary Question PQ705
+   Dataset compiled by <a href="https://x.com/AfikaSoyamba" target="_blank" 
+  style="color:#64748b;">@AfikaSoyamba</a> ·  
 </div>
 """, unsafe_allow_html=True)

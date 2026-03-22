@@ -209,5 +209,7 @@ for col, (val, label, color) in zip(cols, stats):
 st.markdown("""
 <div style="text-align:center; padding:24px 0 8px; color:#94a3b8; font-size:12px; margin-top:24px;">
   Sources: Stats SA QLFS Q3 2025 · IDC Dashboard · NEF PQ705
+  Dataset compiled by <a href="https://x.com/AfikaSoyamba" target="_blank" 
+  style="color:#64748b;">@AfikaSoyamba</a> ·
 </div>
 """, unsafe_allow_html=True)
