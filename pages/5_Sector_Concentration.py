@@ -218,20 +218,24 @@ fig_trend.update_layout(
     xaxis=dict(title='Fiscal Year', gridcolor='#f1f5f9'),
     yaxis=dict(
         title='Total Investment (R billions)',
-        titlefont=dict(color='#f0a500'),
+        title_font=dict(color='#f0a500'),
         tickfont=dict(color='#f0a500'),
         gridcolor='#f1f5f9',
-    ),
-    yaxis2=dict(
-        title='Number of Deals',
-        titlefont=dict(color='#00c9a7'),
-        tickfont=dict(color='#00c9a7'),
-        overlaying='y', side='right',
     ),
     legend=dict(orientation='h', yanchor='bottom', y=1.02, xanchor='right', x=1),
     margin=dict(t=40, b=20, l=20, r=20),
     height=400,
 )
+fig_trend.update_layout({
+    'yaxis2': dict(
+        title='Number of Deals',
+        title_font=dict(color='#00c9a7'),
+        tickfont=dict(color='#00c9a7'),
+        overlaying='y',
+        side='right',
+        showgrid=False,
+    )
+})
 st.plotly_chart(fig_trend, use_container_width=True)
 
 st.markdown("""
