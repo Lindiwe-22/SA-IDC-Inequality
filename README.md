@@ -191,6 +191,16 @@ or can identify errors in the source parliamentary question, please open an issu
 
 ---
 
+## 🙏 Acknowledgements
+
+The underlying dataset was compiled and made publicly available by
+**[@AfikaSoyamba](https://x.com/AfikaSoyamba)** on X, who built a database of
+1,248 South African businesses funded by the IDC and NEF — 856 from the IDC,
+392 from the NEF — including every company name, amount, and province.
+This analysis would not exist without that work. Thank you.
+
+---
+
 ## 📜 License
 
 MIT License — see `LICENSE` for details.

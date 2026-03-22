@@ -280,6 +280,8 @@ st.markdown('<hr class="section-divider">', unsafe_allow_html=True)
 st.markdown("""
 <div style="text-align:center; padding:24px 0 8px; color:#94a3b8; font-size:13px;">
   Data: IDC Funding Dashboard · NEF PQ705 (dtic.gov.za) · Stats SA QLFS Q3 2025<br>
-  Analysis: Lindiwe Dube · Built with Streamlit & Plotly · For public interest use
+  Dataset compiled by <a href="https://x.com/AfikaSoyamba" target="_blank" 
+  style="color:#64748b;">@AfikaSoyamba</a> ·
+  Analysis: Lindiwe Songewla · Built with Streamlit & Plotly · For public interest use
 </div>
 """, unsafe_allow_html=True)
