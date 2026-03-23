@@ -226,7 +226,6 @@ The app is deployed on **Streamlit Cloud**. To deploy your own instance:
 - Provincial unemployment rates are not included in this dataset — geographic efficiency analysis uses national averages
 - The NEF dataset does not include time-series data — no year-on-year comparison is possible
 ```
-
 ---
 
 ## 🤝 Contributing & Feedback
@@ -244,7 +243,6 @@ The underlying dataset was compiled and made publicly available by
 392 from the NEF — including every company name, amount, and province.
 This analysis would not exist without that work. Thank you.
 ```
-
 ---
 
 ## 📜 License
@@ -252,8 +250,6 @@ This analysis would not exist without that work. Thank you.
 MIT License — see `LICENSE` for details.
 Data sourced from South African public records. Analysis and code © 2025 Lindiwe Songelwa.
 ```
-
----
 
 *Part of a data science portfolio targeting the South African mining and finance sectors.*
 *Built with Python · Streamlit · Plotly · Public data.*
