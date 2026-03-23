@@ -31,6 +31,8 @@ Institution (DFI) funding:
 The analysis covers **R69.5 billion** of public development finance across two institutions:
 the **Industrial Development Corporation (IDC)** and the **National Empowerment Fund (NEF)**.
 
+[![Streamlit App](https://img.shields.io/badge/Streamlit-Live%20App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://sa-idc-inequality.streamlit.app)
+
 ---
 
 ## 🔍 The Six Key Findings
@@ -113,7 +115,6 @@ sa-idc-inequality/
     ├── IDC_Funded_Businesses.csv
     └── NEF_Funded_Businesses.csv
 ```
-
 
 ---
 
