@@ -255,6 +255,7 @@ MIT License — see `LICENSE` for details.
 Data sourced from South African public records. Analysis and code © 2025 Lindiwe Songelwa.
 ```
 ```
+---
 *Part of a data science portfolio targeting the South African mining and finance sectors.*
 *Built with Python · Streamlit · Plotly · Public data.*
 ```
