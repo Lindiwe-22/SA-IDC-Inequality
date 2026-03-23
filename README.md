@@ -217,7 +217,7 @@ The app is deployed on **Streamlit Cloud**. To deploy your own instance:
 ```
 
 ---
-
+```
 ## ⚠️ Limitations & Caveats
 
 - IDC data covers **named sectors only** — 56.5% of investment is unattributed
@@ -227,14 +227,14 @@ The app is deployed on **Streamlit Cloud**. To deploy your own instance:
 - The NEF dataset does not include time-series data — no year-on-year comparison is possible
 ```
 ---
-
+```
 ## 🤝 Contributing & Feedback
 
 This is an open civic data project. If you have access to more granular IDC or NEF data,
 or can identify errors in the source parliamentary question, please open an issue or pull request.
 ```
 ---
-
+```
 ## 🙏 Acknowledgements
 
 The underlying dataset was compiled and made publicly available by
@@ -244,12 +244,13 @@ The underlying dataset was compiled and made publicly available by
 This analysis would not exist without that work. Thank you.
 ```
 ---
-
+```
 ## 📜 License
 
 MIT License — see `LICENSE` for details.
 Data sourced from South African public records. Analysis and code © 2025 Lindiwe Songelwa.
 ```
-
+```
 *Part of a data science portfolio targeting the South African mining and finance sectors.*
 *Built with Python · Streamlit · Plotly · Public data.*
+```
