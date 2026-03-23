@@ -88,26 +88,32 @@ that structure rather than transforming it.
 ---
 
 ## 🗂️ Repository Structure
-
 ```
-sa-dfi-inequality/
+sa-idc-inequality/
 │
 ├── app.py                          # Streamlit landing page
-├── analysis.ipynb                  # Full analytical notebook (professional audience)
+├── analysis.ipynb                  # Inequality analysis notebook (professional audience)
 ├── requirements.txt
 ├── README.md
+│
+├── notebooks/
+│   ├── ml_predictor.ipynb          # Job Creation ROI Predictor — ML training notebook
+│   └── anomaly_detection.ipynb     # NEF Anomaly Detection — Isolation Forest notebook
 │
 ├── pages/
 │   ├── 1_Crisis_Context.py         # Unemployment benchmarks + DFI mandate
 │   ├── 2_Geographic_Inequality.py  # Provincial money vs jobs + cost per job
 │   ├── 3_Deal_Size_Inequality.py   # Lorenz curve + bracket divergence + grants
 │   ├── 4_Job_Efficiency.py         # Top-10 disbursed vs top-10 job creators
-│   └── 5_Sector_Concentration.py  # IDC sectors + fiscal trend + accountability gap
+│   ├── 5_Sector_Concentration.py   # IDC sectors + fiscal trend + accountability gap
+│   ├── 6_Job_ROI_Predictor.py      # ML-powered cost-per-job predictor
+│   └── 7_Anomaly_Detection.py      # Isolation Forest anomaly flagging
 │
 └── data/
     ├── IDC_Funded_Businesses.csv
     └── NEF_Funded_Businesses.csv
 ```
+
 
 ---
 
@@ -129,12 +135,10 @@ jupyter notebook analysis.ipynb
 ```
 
 ---
+## 🧪 Analytical Notebooks
 
-## 🧪 Analytical Notebook — `analysis.ipynb`
-
-The notebook is structured as a **linear narrative with headings per analytical lens**,
-intended for data science and policy professionals. It documents all working,
-discrepancies found, and intermediate findings before they are delivered to the Streamlit app.
+### `analysis.ipynb` — Funding Concentration & Inequality Analysis
+Linear narrative with headings per analytical lens, for data science and policy professionals.
 
 | Section | What it covers |
 |---------|---------------|
@@ -148,6 +152,33 @@ discrepancies found, and intermediate findings before they are delivered to the 
 | Lens 6 | Cross-dataset synthesis — IDC vs NEF comparison, discrepancy register |
 | Conclusions | 6 numbered findings handed off to `app.py` |
 
+### `notebooks/ml_predictor.ipynb` — Job Creation ROI Predictor
+Three ML models trained to predict cost-per-job from deal characteristics.
+
+| Section | What it covers |
+|---------|---------------|
+| Data Construction | 17 real anchors + 375 aggregate-derived records |
+| EDA | Distribution analysis, log-log relationships |
+| Feature Engineering | log_disbursed, bracket_ord, has_grant, province dummies |
+| Model Training | Linear Regression · Random Forest · XGBoost with 5-fold CV |
+| Model Comparison | R², RMSE, predicted vs actual charts |
+| Feature Importance | Deal size dominates at >85% — the policy implication |
+| Conclusions | 5 findings including the Umnotho Maize outlier note |
+
+### `notebooks/anomaly_detection.ipynb` — NEF Anomaly Detection
+Isolation Forest flags statistical outliers — both red flags and positive outliers.
+
+| Section | What it covers |
+|---------|---------------|
+| EDA | Disbursed vs jobs in raw and log-log space |
+| Isolation Forest | Setup, contamination=10%, 200 estimators |
+| Score Distribution | Anomaly score histogram with real company annotations |
+| Anomaly Map | Scatter chart — disbursed vs jobs coloured by anomaly status |
+| Named Outliers | Real companies flagged with full metrics |
+| Province Analysis | Anomaly rate concentration by province |
+| Sensitivity Analysis | Stability across contamination rates 5%–20% |
+| Conclusions | 5 findings including CK Mafutha as most anomalous record |
+
 ---
 
 ## 🛠️ Tech Stack
@@ -159,6 +190,8 @@ discrepancies found, and intermediate findings before they are delivered to the 
 | `matplotlib` | Notebook visualisations (dark theme) |
 | `plotly` | Interactive Streamlit charts |
 | `streamlit` | Public-facing web application |
+| `scikit-learn` | Machine learning — Isolation Forest, Random Forest, Linear Regression |
+| `xgboost` | Gradient boosting — XGBoost regressor |
 
 ---
 
@@ -171,6 +204,17 @@ The app is deployed on **Streamlit Cloud**. To deploy your own instance:
 3. Connect your GitHub account
 4. Select this repo and set **Main file** to `app.py`
 5. Click **Deploy** — dependencies install automatically from `requirements.txt`
+
+---
+
+## 📁 Project Series
+
+| # | Title | Notebook | Streamlit Page | Status |
+|---|-------|----------|----------------|--------|
+| 3 | Funding Concentration & Inequality Analysis | `analysis.ipynb` | Pages 1–5 | ✅ Live |
+| 2 | Job Creation ROI Predictor | `notebooks/ml_predictor.ipynb` | Page 6 | ✅ Live |
+| 5 | NEF Anomaly Detection | `notebooks/anomaly_detection.ipynb` | Page 7 | ✅ Live |
+```
 
 ---
 
