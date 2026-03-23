@@ -225,6 +225,7 @@ The app is deployed on **Streamlit Cloud**. To deploy your own instance:
 - FY2023-24 IDC data is **absent** from the source — trend analysis skips this year
 - Provincial unemployment rates are not included in this dataset — geographic efficiency analysis uses national averages
 - The NEF dataset does not include time-series data — no year-on-year comparison is possible
+```
 
 ---
 
@@ -232,7 +233,7 @@ The app is deployed on **Streamlit Cloud**. To deploy your own instance:
 
 This is an open civic data project. If you have access to more granular IDC or NEF data,
 or can identify errors in the source parliamentary question, please open an issue or pull request.
-
+```
 ---
 
 ## 🙏 Acknowledgements
@@ -242,6 +243,7 @@ The underlying dataset was compiled and made publicly available by
 1,248 South African businesses funded by the IDC and NEF — 856 from the IDC,
 392 from the NEF — including every company name, amount, and province.
 This analysis would not exist without that work. Thank you.
+```
 
 ---
 
@@ -249,6 +251,7 @@ This analysis would not exist without that work. Thank you.
 
 MIT License — see `LICENSE` for details.
 Data sourced from South African public records. Analysis and code © 2025 Lindiwe Songelwa.
+```
 
 ---
 
