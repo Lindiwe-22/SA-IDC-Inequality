@@ -216,8 +216,9 @@ The app is deployed on **Streamlit Cloud**. To deploy your own instance:
 | 5 | NEF Anomaly Detection | `notebooks/anomaly_detection.ipynb` | Page 7 | ✅ Live |
 ```
 
----
+
 ```
+---
 ## ⚠️ Limitations & Caveats
 
 - IDC data covers **named sectors only** — 56.5% of investment is unattributed
@@ -226,15 +227,17 @@ The app is deployed on **Streamlit Cloud**. To deploy your own instance:
 - Provincial unemployment rates are not included in this dataset — geographic efficiency analysis uses national averages
 - The NEF dataset does not include time-series data — no year-on-year comparison is possible
 ```
----
+
 ```
+---
 ## 🤝 Contributing & Feedback
 
 This is an open civic data project. If you have access to more granular IDC or NEF data,
 or can identify errors in the source parliamentary question, please open an issue or pull request.
 ```
----
+
 ```
+---
 ## 🙏 Acknowledgements
 
 The underlying dataset was compiled and made publicly available by
@@ -243,8 +246,9 @@ The underlying dataset was compiled and made publicly available by
 392 from the NEF — including every company name, amount, and province.
 This analysis would not exist without that work. Thank you.
 ```
----
+
 ```
+---
 ## 📜 License
 
 MIT License — see `LICENSE` for details.
