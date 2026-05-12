@@ -28,7 +28,7 @@ st.markdown("""
   <div class="byline-row">
     <div class="byline">
       By <strong>Lindiwe Songelwa</strong> &nbsp;·&nbsp;
-      IDC Dashboard · NEF PQ705 · Stats SA QLFS Q3 2025 &nbsp;·&nbsp; 2025
+      IDC Dashboard · NEF PQ705 · Stats SA QLFS Q3 2025 &nbsp;·&nbsp; 2026
     </div>
   </div>
 </div>
