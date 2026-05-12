@@ -1,0 +1,39 @@
+[[pages]]
+path = "app.py"
+name = "Overview"
+icon = "💰"
+
+[[pages]]
+path = "pages/1_Crisis_Context.py"
+name = "1. Crisis Context"
+icon = "📉"
+
+[[pages]]
+path = "pages/2_Geographic_Inequality.py"
+name = "2. Geographic Inequality"
+icon = "📍"
+
+[[pages]]
+path = "pages/3_Deal_Size_Inequality.py"
+name = "3. Deal Size Inequality"
+icon = "📊"
+
+[[pages]]
+path = "pages/4_Job_Efficiency.py"
+name = "4. Job Efficiency"
+icon = "⚠️"
+
+[[pages]]
+path = "pages/5_Sector_Concentration.py"
+name = "5. Sector Concentration"
+icon = "⛏️"
+
+[[pages]]
+path = "pages/6_Job_ROI_Predictor.py"
+name = "6. Job ROI Predictor"
+icon = "🤖"
+
+[[pages]]
+path = "pages/7_Anomaly_Detection.py"
+name = "7. Anomaly Detection"
+icon = "🔍"
