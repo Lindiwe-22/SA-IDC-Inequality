@@ -134,7 +134,7 @@ FOOTER_HTML = """
 <div class="footer-strip">
   Data: IDC Funding Dashboard &nbsp;·&nbsp; NEF Parliamentary Question PQ705 (dtic.gov.za)
   &nbsp;·&nbsp; Stats SA QLFS Q3 2025<br>
-  Analysis &amp; code &copy; 2025 Lindiwe Songelwa &nbsp;·&nbsp; Open source
+  Analysis &amp; code &copy; 2026 Lindiwe Songelwa &nbsp;·&nbsp; Open source
   &nbsp;·&nbsp; Built with Python, Streamlit &amp; Plotly
 </div>
 """
@@ -172,7 +172,19 @@ def sidebar_content():
             "- Stats SA QLFS Q3 2025"
         )
         st.markdown("---")
-        st.caption("Analysis by Lindiwe Songelwa")
+        st.markdown("**Dataset compiled by**")
+        st.markdown(
+            "[@AfikaSoyamba](https://x.com/AfikaSoyamba) on X (formerly Twitter) — "
+            "1,248 SA businesses funded by the IDC and NEF."
+        )
+        st.markdown("---")
+        st.markdown("**Connect with Lindiwe**")
+        st.markdown(
+            "🔗 [LinkedIn](https://za.linkedin.com/in/lindiwe-songelwa)\n\n"
+            "🌐 [Portfolio](https://lindiwe-22.github.io/Portfolio-Website/)"
+        )
+        st.markdown("---")
+        st.caption("Analysis by Lindiwe Songelwa · 2026")
 
 def apply_plotly_theme(fig, height=420):
     fig.update_layout(

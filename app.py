@@ -8,6 +8,11 @@ st.set_page_config(
     page_icon="💰",
     layout="wide",
     initial_sidebar_state="expanded",
+    menu_items={
+        "Get help": None,
+        "Report a bug": None,
+        "About": "Who Really Gets the Money? — A public interest analysis of South African development finance by Lindiwe Songelwa."
+    }
 )
 
 st.markdown(GLOBAL_CSS, unsafe_allow_html=True)
@@ -131,23 +136,54 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# ── Nav strip ──────────────────────────────────────────────────────────────────
+# ── Nav strip — functional page navigation ─────────────────────────────────────
+st.markdown(section_rule("Explore the analysis"), unsafe_allow_html=True)
+
 st.markdown("""
-<div class="nav-strip">
-  <span class="nav-strip-label">Explore</span>
-  <span class="nav-item">1. Crisis Context</span>
-  <span class="nav-item">2. Geographic Inequality</span>
-  <span class="nav-item">3. Deal Size</span>
-  <span class="nav-item">4. Job Efficiency</span>
-  <span class="nav-item">5. Sector Concentration</span>
-</div>
+<style>
+/* Style the page_link buttons to match the editorial design */
+[data-testid="stPageLink"] a {
+    display: inline-block;
+    font-family: 'Source Serif 4', Georgia, serif !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.04em !important;
+    color: #111110 !important;
+    background: #FAFAF8 !important;
+    border: 0.5px solid #D3D1C7 !important;
+    padding: 6px 12px !important;
+    text-decoration: none !important;
+    margin: 0 4px 6px 0 !important;
+}
+[data-testid="stPageLink"] a:hover {
+    background: #F1EFE8 !important;
+    border-color: #BA7517 !important;
+    color: #BA7517 !important;
+}
+</style>
 """, unsafe_allow_html=True)
+
+cols = st.columns(7)
+pages = [
+    ("pages/1_Crisis_Context.py",        "1. Crisis Context"),
+    ("pages/2_Geographic_Inequality.py", "2. Geographic Inequality"),
+    ("pages/3_Deal_Size_Inequality.py",  "3. Deal Size"),
+    ("pages/4_Job_Efficiency.py",        "4. Job Efficiency"),
+    ("pages/5_Sector_Concentration.py",  "5. Sector Concentration"),
+    ("pages/6_Job_ROI_Predictor.py",     "6. Job ROI Predictor"),
+    ("pages/7_Anomaly_Detection.py",     "7. Anomaly Detection"),
+]
+for col, (path, label) in zip(cols, pages):
+    with col:
+        st.page_link(path, label=label)
 
 st.markdown("""
 <div class="ack-note">
-  The underlying dataset was compiled by <strong>@AfikaSoyamba</strong> — a database of 1,248
-  South African businesses funded by the IDC and NEF, including every company name, amount,
-  and province. This analysis would not exist without that work.
+  The underlying dataset was compiled by <strong>@AfikaSoyamba</strong>
+  (<a href="https://x.com/AfikaSoyamba" target="_blank" style="color:#BA7517;">find him on X, formerly Twitter</a>) —
+  a database of 1,248 South African businesses funded by the IDC and NEF,
+  including every company name, amount, and province.
+  This analysis would not exist without that work.
 </div>
 """, unsafe_allow_html=True)
 
